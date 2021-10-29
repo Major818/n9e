@@ -1,6 +1,7 @@
 package cron
 
 import (
+	"github.com/toolkits/pkg/net/httplib"
 	"path"
 	"regexp"
 	"strings"
@@ -13,8 +14,9 @@ import (
 
 	"github.com/toolkits/pkg/file"
 	"github.com/toolkits/pkg/logger"
-	"github.com/toolkits/pkg/net/httplib"
+	//"github.com/toolkits/pkg/net/httplib"
 	"github.com/toolkits/pkg/sys"
+	"v.src.corp.qihoo.net/nezha/mulan/alarm"
 )
 
 func ConsumeIm() {
@@ -51,6 +53,8 @@ func sendIm(message *dataobj.Message) {
 		sendImByWeChatRobot(message)
 	case "dingtalk_robot":
 		sendImByDingTalkRobot(message)
+	case "tuitui":
+		sendImByTuiTui(message)
 	default:
 		logger.Errorf("not support %s to send im, im: %+v", Sender["im"].Way, message)
 	}
@@ -60,6 +64,19 @@ func sendImByAPI(message *dataobj.Message) {
 	api := Sender["im"].API
 	res, code, err := httplib.PostJSON(api, time.Second, message, nil)
 	logger.Infof("SendImByAPI, api:%s, im:%+v, error:%v, response:%s, statuscode:%d", api, message, err, string(res), code)
+}
+
+func sendImByTuiTui(message *dataobj.Message) {
+	api := Sender["im"].API
+	addrAndToken := strings.Split(api, "|")
+	if len(addrAndToken) != 2 {
+		logger.Error("tuitui api fmt error: %s", api)
+		return
+	}
+	tuiTuiAlarm := alarm.NewAlarmer("KM", addrAndToken[0], addrAndToken[1])
+	msg := message.Tos[0] + "\n" + message.Subject + "\n" + message.Content
+	res, err := tuiTuiAlarm.Alarm([]byte(msg))
+	logger.Infof("SendImByTuiTui, api:%s, im:%+v, error:%v, response:%s", api, message, err, res)
 }
 
 func sendImByShell(message *dataobj.Message) {

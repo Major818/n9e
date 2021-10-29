@@ -76,7 +76,27 @@ rdb:
   #    whiteList: false
   #    frozenDays: 90      # frozen time (day)
   #    writenOffDays: 365  # writenOff time (day)
-
+  sender:
+    mail:
+      # three choice: smtp|shell|api
+      way: smtp
+      worker: 10
+      api: http://127.0.0.1:2008/mail
+    sms:
+      # two choice: shell|api
+      way: api
+      worker: 10
+      api: http://127.0.0.1:2008/sms
+    voice:
+      # two choice: shell|api
+      way: shell
+      worker: 10
+      api: http://127.0.0.1:2008/voice
+    im:
+      # five choice: shell|api|wechat|wechat_robot|dingtalk_robot/tuitui
+      way: tuitui
+      worker: 10
+      api: http://ip:port|token
 
 #i18n:
 #  lang: zh
@@ -153,7 +173,14 @@ monapi:
     p1: ["voice", "sms", "mail", "im"]
     p2: ["sms", "mail", "im"]
     p3: ["mail", "im"]  
-
+  queue:
+    high: {"monapi_queue_high_test"}
+    low: {"monapi_queue_low_test"}
+    callback: "monapi_queue_callback_test"
+  merge:
+    hash: "km8888n9e"
+    max: 10
+    interval: 60
   # addresses accessible using browser
   link:
     stra: http://n9e.com/mon/strategy/%v
