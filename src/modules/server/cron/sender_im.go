@@ -73,8 +73,12 @@ func sendImByTuiTui(message *dataobj.Message) {
 		logger.Error("tuitui api fmt error: %s", api)
 		return
 	}
+	tos := ""
+	for _, t := range message.Tos {
+		tos += t + "\t"
+	}
 	tuiTuiAlarm := alarm.NewAlarmer("KM", addrAndToken[0], addrAndToken[1])
-	msg := message.Tos[0] + "\n" + message.Subject + "\n" + message.Content
+	msg := tos + "\n" + message.Subject + "\n" + message.Content
 	res, err := tuiTuiAlarm.Alarm([]byte(msg))
 	logger.Infof("SendImByTuiTui, api:%s, im:%+v, error:%v, response:%s", api, message, err, res)
 }

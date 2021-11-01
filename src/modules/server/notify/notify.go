@@ -127,7 +127,6 @@ func genContent(isUpgrade bool, events []*models.Event) (string, string) {
 	elink := fmt.Sprintf(cfg.Link.Event, events[cnt-1].Id)
 	clink := ""
 	curNodePath := events[cnt-1].CurNodePath
-	logger.Infof("cfg.Link.Stra:%s ,cfg.Link.Event:%s", cfg.Link.Stra, cfg.Link.Event)
 	if events[0].EventType == models.ALERT {
 		clink = genClaimLink(events)
 	}
