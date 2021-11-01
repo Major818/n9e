@@ -174,8 +174,8 @@ monapi:
     p2: ["sms", "mail", "im"]
     p3: ["mail", "im"]  
   queue:
-    high: {"monapi_queue_high_test"}
-    low: {"monapi_queue_low_test"}
+    high: ["monapi_queue_high_test"]
+    low: ["monapi_queue_low_test"]
     callback: "monapi_queue_callback_test"
   merge:
     hash: "km8888n9e"
@@ -189,8 +189,6 @@ monapi:
 
 judge:
   query:
-    connTimeout: 1000
-    callTimeout: 2000
     maxConn:          2000
     maxIdle:          100
     connTimeout:      1000
