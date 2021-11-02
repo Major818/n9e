@@ -405,11 +405,12 @@ func genEtime(events []*models.Event) string {
 
 func send(tos []string, content, subject, notifyType string) error {
 	var message dataobj.Message
-
 	if tos == nil || len(tos) == 0 {
 		return fmt.Errorf("tos is empty")
 	}
 
+	message.Tos = tos
+	message.Subject = subject
 	message.Content = strings.TrimSpace(content)
 	if message.Content == "" {
 		return fmt.Errorf("content is blank")
