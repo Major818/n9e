@@ -79,6 +79,8 @@ func DoNotify(isUpgrade bool, events ...*models.Event) {
 
 			if err := send(slice.Set(tos), mailContent, subject, "mail"); err == nil {
 				logger.Infof("sendMail: %+v", events[0])
+			} else {
+				logger.Errorf("sendEmail error: %s", err.Error())
 			}
 		case "im":
 			tos := []string{}
@@ -86,7 +88,9 @@ func DoNotify(isUpgrade bool, events ...*models.Event) {
 				tos = append(tos, users[j].Im)
 			}
 
-			send(slice.Set(tos), content, "", "im")
+			if err := send(slice.Set(tos), content, "", "im"); err != nil {
+				logger.Errorf("sendIm error: %s", err.Error())
+			}
 		default:
 			logger.Errorf("not support %s to send notify, events: %+v", notifyTypes[i], events)
 		}
