@@ -3,9 +3,9 @@ package mysql
 import (
 	"fmt"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
-	"github.com/didi/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
 
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs/mysql"
@@ -36,33 +36,33 @@ var (
 			"if the list is empty, then metrics are gathered from all database tables": "如果列表为空，则收集所有数据库表",
 			"Process List": "进程列表",
 			"gather thread state counts from INFORMATION_SCHEMA.PROCESSLIST": "采集 INFORMATION_SCHEMA.PROCESSLIST",
-			"User Statistics":                                                "用户统计",
+			"User Statistics": "用户统计",
 			"gather user statistics from INFORMATION_SCHEMA.USER_STATISTICS": "采集 INFORMATION_SCHEMA.USER_STATISTICS",
 			"Auto Increment": "自动递增变量",
 			"gather auto_increment columns and max values from information schema": "采集 auto_increment 和 max values",
-			"Innodb Metrics":                                        "Innodb统计",
+			"Innodb Metrics": "Innodb统计",
 			"gather metrics from INFORMATION_SCHEMA.INNODB_METRICS": "采集 INFORMATION_SCHEMA.INNODB_METRICS",
-			"Slave Status":                                          "Slave状态",
-			"gather metrics from SHOW SLAVE STATUS command output":  "采集 SHOW SLAVE STATUS",
+			"Slave Status": "Slave状态",
+			"gather metrics from SHOW SLAVE STATUS command output": "采集 SHOW SLAVE STATUS",
 			"Binary Logs": "Binary Logs",
 			"gather metrics from SHOW BINARY LOGS command output": "采集 SHOW BINARY LOGS",
-			"Table IO Waits":                                      "Table IO Waits",
+			"Table IO Waits": "Table IO Waits",
 			"gather metrics from PERFORMANCE_SCHEMA.TABLE_IO_WAITS_SUMMARY_BY_TABLE": "采集 PERFORMANCE_SCHEMA.TABLE_IO_WAITS_SUMMARY_BY_TABLE",
-			"Table Lock Waits":                                        "Table Lock Waits",
+			"Table Lock Waits": "Table Lock Waits",
 			"gather metrics from PERFORMANCE_SCHEMA.TABLE_LOCK_WAITS": "采集 PERFORMANCE_SCHEMA.TABLE_LOCK_WAITS",
-			"Index IO Waits":                                          "Index IO Waits",
+			"Index IO Waits": "Index IO Waits",
 			"gather metrics from PERFORMANCE_SCHEMA.TABLE_IO_WAITS_SUMMARY_BY_INDEX_USAGE": "采集 PERFORMANCE_SCHEMA.TABLE_IO_WAITS_SUMMARY_BY_INDEX_USAGE",
 			"Event Waits": "Event Waits",
 			"gather metrics from PERFORMANCE_SCHEMA.EVENT_WAITS": "采集 PERFORMANCE_SCHEMA.EVENT_WAITS",
 			"Tables": "Tables",
 			"gather metrics from INFORMATION_SCHEMA.TABLES for databases provided above list": "采集 INFORMATION_SCHEMA.TABLES",
-			"File Events Stats":                                                                                                                                                                               "File Events Stats",
-			"gather metrics from PERFORMANCE_SCHEMA.FILE_SUMMARY_BY_EVENT_NAME":                                                                                                                               "采集 PERFORMANCE_SCHEMA.FILE_SUMMARY_BY_EVENT_NAME",
-			"Perf Events Statements Digest Text Limit":                                                                                                                                                        "标准语句的最大长度",
-			"Perf Events Statements Limit":                                                                                                                                                                    "根据响应时间限制语句的事件数量",
-			"Perf Events Statements Timelimit":                                                                                                                                                                "限制最后出现的事件",
-			"Perf Events Statements":                                                                                                                                                                          "采集 PERFORMANCE_SCHEMA",
-			"gather metrics from PERFORMANCE_SCHEMA.EVENTS_STATEMENTS_SUMMARY_BY_DIGEST":                                                                                                                      "采集 PERFORMANCE_SCHEMA.EVENTS_STATEMENTS_SUMMARY_BY_DIGEST",
+			"File Events Stats": "File Events Stats",
+			"gather metrics from PERFORMANCE_SCHEMA.FILE_SUMMARY_BY_EVENT_NAME":          "采集 PERFORMANCE_SCHEMA.FILE_SUMMARY_BY_EVENT_NAME",
+			"Perf Events Statements Digest Text Limit":                                   "标准语句的最大长度",
+			"Perf Events Statements Limit":                                               "根据响应时间限制语句的事件数量",
+			"Perf Events Statements Timelimit":                                           "限制最后出现的事件",
+			"Perf Events Statements":                                                     "采集 PERFORMANCE_SCHEMA",
+			"gather metrics from PERFORMANCE_SCHEMA.EVENTS_STATEMENTS_SUMMARY_BY_DIGEST": "采集 PERFORMANCE_SCHEMA.EVENTS_STATEMENTS_SUMMARY_BY_DIGEST",
 			"specify servers via a url matching<br />[username[:password]@][protocol[(address)]]/[?tls=[true|false|skip-verify|custom]]<br />see https://github.com/go-sql-driver/mysql#dsn-data-source-name": "通过URL设置指定服务器<br />[username[:password]@][protocol[(address)]]/[?tls=[true|false|skip-verify|custom]]<br />参考 https://github.com/go-sql-driver/mysql#dsn-data-source-name",
 			"Interval Slow": "周期限制",
 			"Some queries we may want to run less often (such as SHOW GLOBAL VARIABLES)": "限制一些查询的最小间隔(比如 SHOW GLOBAL VARIABLES)",
@@ -122,7 +122,7 @@ func (p *MysqlRule) TelegrafInput() (telegraf.Input, error) {
 	}
 
 	return &mysql.Mysql{
-		Servers: p.Servers,
+		Servers:                             p.Servers,
 		PerfEventsStatementsDigestTextLimit: p.PerfEventsStatementsDigestTextLimit,
 		PerfEventsStatementsLimit:           p.PerfEventsStatementsLimit,
 		PerfEventsStatementsTimeLimit:       p.PerfEventsStatementsTimeLimit,

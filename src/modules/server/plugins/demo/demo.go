@@ -1,9 +1,9 @@
 package demo
 
 import (
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
-	"github.com/didi/nightingale/v4/src/modules/server/plugins/demo/demo"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins/demo/demo"
 	"github.com/influxdata/telegraf"
 )
 
@@ -27,10 +27,10 @@ func NewDemoCollector() *DemoCollector {
 var (
 	langDict = map[string]map[string]string{
 		"zh": map[string]string{
-			"Period": "周期",
+			"Period":                                 "周期",
 			"The period of the function, in seconds": "函数周期，单位 秒",
-			"Count":                   "数量",
-			"The Count of the series": "指标数量",
+			"Count":                                  "数量",
+			"The Count of the series":                "指标数量",
 		},
 	}
 )

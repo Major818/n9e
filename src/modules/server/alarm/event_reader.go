@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
-	"github.com/didi/nightingale/v4/src/modules/server/config"
-	"github.com/didi/nightingale/v4/src/modules/server/redisc"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/modules/server/redisc"
 
 	"github.com/garyburd/redigo/redis"
 	"github.com/toolkits/pkg/logger"

@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/modules/agentd/config"
-	"github.com/didi/nightingale/v4/src/modules/agentd/log/reader"
-	"github.com/didi/nightingale/v4/src/modules/agentd/log/strategy"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/log/reader"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/log/strategy"
 
 	"github.com/toolkits/pkg/logger"
 )

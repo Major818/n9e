@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
 
 	oidc "github.com/coreos/go-oidc"
 	"github.com/google/uuid"

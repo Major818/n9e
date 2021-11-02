@@ -5,11 +5,11 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/prober/config"
-	"github.com/didi/nightingale/v4/src/modules/prober/manager/accumulator"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/prober/config"
+	"github.com/Major818/nightingale/v4/src/modules/prober/manager/accumulator"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
 
 	"github.com/influxdata/telegraf"
 	"github.com/toolkits/pkg/logger"

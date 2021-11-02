@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/stats"
-	"github.com/didi/nightingale/v4/src/common/str"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
-	"github.com/didi/nightingale/v4/src/modules/server/judge/query"
-	"github.com/didi/nightingale/v4/src/modules/server/redisc"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/common/str"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/modules/server/judge/query"
+	"github.com/Major818/nightingale/v4/src/modules/server/redisc"
 
 	"github.com/spaolacci/murmur3"
 	"github.com/toolkits/pkg/logger"
@@ -406,7 +406,6 @@ func sendEventIfNeed(status []bool, event *dataobj.Event, stra *models.Stra) {
 	if isTriggered {
 		event.EventType = EVENT_ALERT
 		if !exists || lastEvent.EventType[0] == 'r' {
-			logger.Info("event.alert1 queue: %s", event.Partition)
 			stats.Counter.Set("event.alert", 1)
 			sendEvent(event)
 			return
@@ -416,7 +415,6 @@ func sendEventIfNeed(status []bool, event *dataobj.Event, stra *models.Stra) {
 			//距离上次告警的时间小于告警统计周期，不再进行告警判断
 			return
 		}
-		logger.Info("event.alert2  queue: %s", event.Partition)
 		stats.Counter.Set("event.alert", 1)
 		sendEvent(event)
 	} else {

@@ -8,11 +8,11 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
-	"github.com/didi/nightingale/v4/src/modules/server/config"
-	"github.com/didi/nightingale/v4/src/modules/server/ssoc"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/modules/server/ssoc"
 
 	pkgcache "github.com/toolkits/pkg/cache"
 	"github.com/toolkits/pkg/logger"

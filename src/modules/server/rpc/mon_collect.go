@@ -3,8 +3,8 @@ package rpc
 import (
 	"encoding/json"
 
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
 
 	"github.com/toolkits/pkg/logger"
 )

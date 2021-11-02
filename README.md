@@ -14,7 +14,7 @@ OCE是一个认证机制和交流平台，为夜莺生产用户量身打造，�
 
 ### 文档资料
 
-- **文档手册**： [https://n9e.didiyun.com/](https://n9e.didiyun.com/) 欢迎大家一起完善
+- **文档手册**： [https://github.com/Major818/](https://github.com/Major818/) 欢迎大家一起完善
 - **视频教程**：[https://space.bilibili.com/442531657](https://space.bilibili.com/442531657) 欢迎大家关注
 - **音频答疑**：[https://www.ximalaya.com/keji/45095827/](https://www.ximalaya.com/keji/45095827/) 欢迎大家关注
 - **二次开发**：[https://xie.infoq.cn/article/30d37e98fbe52ff2a79fc04b4](https://xie.infoq.cn/article/30d37e98fbe52ff2a79fc04b4) 欢迎大家共建

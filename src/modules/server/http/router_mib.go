@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/compress"
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/common/compress"
+	"github.com/Major818/nightingale/v4/src/models"
 
 	"github.com/gin-gonic/gin"
 	"github.com/toolkits/pkg/file"

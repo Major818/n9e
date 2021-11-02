@@ -10,9 +10,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/didi/nightingale/v4/src/common/address"
-	"github.com/didi/nightingale/v4/src/common/middleware"
-	"github.com/didi/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/common/address"
+	"github.com/Major818/nightingale/v4/src/common/middleware"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
 )
 
 var srv = &http.Server{

@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
 )
 
 type Function interface {
@@ -33,7 +33,6 @@ type MaxFunction struct {
 }
 
 func (f MaxFunction) Compute(vs []*dataobj.HistoryData) (leftValue dataobj.JsonFloat, isTriggered bool) {
-	fmt.Printf("max function start vs len : %d", len(vs))
 	count := len(vs)
 	if count < 1 {
 		return
@@ -48,7 +47,6 @@ func (f MaxFunction) Compute(vs []*dataobj.HistoryData) (leftValue dataobj.JsonF
 
 	leftValue = max
 	isTriggered = checkIsTriggered(leftValue, f.Operator, f.RightValue)
-	fmt.Printf("max function end : %t", isTriggered)
 	return
 }
 

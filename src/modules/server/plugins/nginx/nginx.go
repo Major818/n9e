@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
-	"github.com/didi/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
 
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs/nginx"
@@ -34,8 +34,8 @@ var (
 		"zh": map[string]string{
 			"Urls": "服务",
 			"An array of Nginx stub_status URI to gather stats.": "查看Nginx状态的地址",
-			"ResponseTimeout":                                    "响应超时时间",
-			"HTTP response timeout (default: 5s)":                "HTTP响应超时时间(单位: 秒)，默认5秒",
+			"ResponseTimeout":                     "响应超时时间",
+			"HTTP response timeout (default: 5s)": "HTTP响应超时时间(单位: 秒)，默认5秒",
 		},
 	}
 )

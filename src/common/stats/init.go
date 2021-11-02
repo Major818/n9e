@@ -8,8 +8,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/address"
-	"github.com/didi/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/address"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
 
 	"github.com/toolkits/pkg/file"
 	"github.com/toolkits/pkg/logger"

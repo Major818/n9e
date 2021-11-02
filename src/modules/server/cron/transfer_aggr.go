@@ -3,12 +3,12 @@ package cron
 import (
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/stats"
-	"github.com/didi/nightingale/v4/src/common/str"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/aggr"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/common/str"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/aggr"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
 )
 
 type AggrCalcResp struct {

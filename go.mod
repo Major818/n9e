@@ -1,4 +1,4 @@
-module github.com/didi/nightingale/v4
+module github.com/Major818/nightingale/v4
 
 go 1.12
 

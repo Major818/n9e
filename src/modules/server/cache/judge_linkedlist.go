@@ -18,7 +18,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
 )
 
 type SafeLinkedList struct {

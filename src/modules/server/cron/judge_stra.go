@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/address"
-	"github.com/didi/nightingale/v4/src/common/identity"
-	"github.com/didi/nightingale/v4/src/common/stats"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/common/address"
+	"github.com/Major818/nightingale/v4/src/common/identity"
+	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
 
 	"github.com/toolkits/pkg/logger"
 )

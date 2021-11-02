@@ -10,10 +10,10 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/address"
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/modules/agentd/cache"
-	"github.com/didi/nightingale/v4/src/modules/agentd/config"
+	"github.com/Major818/nightingale/v4/src/common/address"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/cache"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
 
 	"github.com/toolkits/pkg/logger"
 	"github.com/ugorji/go/codec"

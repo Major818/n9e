@@ -9,8 +9,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/didi/nightingale/v4/src/modules/agentd/config"
-	"github.com/didi/nightingale/v4/src/modules/agentd/core"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/core"
 
 	"github.com/toolkits/pkg/file"
 	"github.com/toolkits/pkg/logger"

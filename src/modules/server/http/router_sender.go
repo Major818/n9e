@@ -3,9 +3,9 @@ package http
 import (
 	"strings"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/modules/server/cron"
-	"github.com/didi/nightingale/v4/src/modules/server/redisc"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/modules/server/cron"
+	"github.com/Major818/nightingale/v4/src/modules/server/redisc"
 
 	"github.com/gin-gonic/gin"
 )

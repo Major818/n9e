@@ -4,9 +4,9 @@ import (
 	"math"
 	"strings"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/str"
-	"github.com/didi/nightingale/v4/src/modules/server/calc"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/str"
+	"github.com/Major818/nightingale/v4/src/modules/server/calc"
 
 	"github.com/m3db/m3/src/query/storage/m3/consolidators"
 	"github.com/m3db/m3/src/x/ident"

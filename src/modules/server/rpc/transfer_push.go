@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/stats"
-	"github.com/didi/nightingale/v4/src/modules/server/aggr"
-	"github.com/didi/nightingale/v4/src/modules/server/backend"
-	"github.com/didi/nightingale/v4/src/modules/server/judge"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/modules/server/aggr"
+	"github.com/Major818/nightingale/v4/src/modules/server/backend"
+	"github.com/Major818/nightingale/v4/src/modules/server/judge"
 
 	"github.com/toolkits/pkg/logger"
 )

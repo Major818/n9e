@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/stats"
 
 	"github.com/Shopify/sarama"
 	"github.com/toolkits/pkg/logger"

@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/agentd/config"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
 
 	"github.com/toolkits/pkg/file"
 	"github.com/toolkits/pkg/logger"

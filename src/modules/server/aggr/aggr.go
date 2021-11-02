@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/str"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/str"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
 
 	"github.com/spaolacci/murmur3"
 	"github.com/toolkits/pkg/logger"

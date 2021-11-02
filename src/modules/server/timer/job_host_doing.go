@@ -7,7 +7,7 @@ import (
 
 	"github.com/toolkits/pkg/logger"
 
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/models"
 )
 
 // CacheHostDoing 缓存task_host_doing表全部内容，减轻DB压力

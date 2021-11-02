@@ -3,7 +3,7 @@ package strategy
 import (
 	"fmt"
 
-	"github.com/didi/nightingale/v4/src/modules/agentd/stra"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/stra"
 
 	"github.com/toolkits/pkg/logger"
 )

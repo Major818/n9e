@@ -5,7 +5,7 @@ import (
 	"github.com/toolkits/pkg/slice"
 	"github.com/toolkits/pkg/str"
 
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/models"
 )
 
 func ScheduleTask(id int64) {

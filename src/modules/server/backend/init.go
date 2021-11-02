@@ -3,9 +3,9 @@ package backend
 import (
 	"log"
 
-	"github.com/didi/nightingale/v4/src/modules/server/backend/influxdb"
-	"github.com/didi/nightingale/v4/src/modules/server/backend/m3db"
-	"github.com/didi/nightingale/v4/src/modules/server/backend/tsdb"
+	"github.com/Major818/nightingale/v4/src/modules/server/backend/influxdb"
+	"github.com/Major818/nightingale/v4/src/modules/server/backend/m3db"
+	"github.com/Major818/nightingale/v4/src/modules/server/backend/tsdb"
 )
 
 type BackendSection struct {

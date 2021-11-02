@@ -1,7 +1,7 @@
 package timer
 
 import (
-	"github.com/didi/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
 
 	"github.com/toolkits/pkg/logger"
 )

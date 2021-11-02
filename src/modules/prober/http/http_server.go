@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/address"
-	"github.com/didi/nightingale/v4/src/common/middleware"
-	"github.com/didi/nightingale/v4/src/modules/prober/config"
+	"github.com/Major818/nightingale/v4/src/common/address"
+	"github.com/Major818/nightingale/v4/src/common/middleware"
+	"github.com/Major818/nightingale/v4/src/modules/prober/config"
 
 	"github.com/gin-gonic/gin"
 )

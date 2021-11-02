@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/str"
+	"github.com/Major818/nightingale/v4/src/common/str"
 )
 
 type JsonFloat float64

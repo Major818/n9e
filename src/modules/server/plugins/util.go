@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/modules/prober/manager/accumulator"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/modules/prober/manager/accumulator"
 
 	"github.com/influxdata/telegraf"
 	"github.com/toolkits/pkg/logger"

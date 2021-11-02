@@ -2,7 +2,7 @@ package http
 
 // Config routes
 import (
-	"github.com/didi/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
 
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"

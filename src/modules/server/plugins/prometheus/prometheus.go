@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
-	"github.com/didi/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
 
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs/prometheus"
@@ -30,7 +30,7 @@ var (
 			"HTTP Basic Authentication username":                                       "HTTP认证用户名",
 			"HTTP Basic Authentication password":                                       "HTTP认证密码",
 			"RESP Timeout":                                                             "请求超时时间",
-			"Specify timeout duration for slower prometheus clients": "k8s请求超时时间, 单位: 秒",
+			"Specify timeout duration for slower prometheus clients":                   "k8s请求超时时间, 单位: 秒",
 		},
 	}
 )

@@ -3,8 +3,8 @@ package udp
 import (
 	"sync"
 
-	"github.com/didi/nightingale/v4/src/common/exit"
-	"github.com/didi/nightingale/v4/src/modules/agentd/statsd"
+	"github.com/Major818/nightingale/v4/src/common/exit"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/statsd"
 
 	"github.com/toolkits/pkg/logger"
 )

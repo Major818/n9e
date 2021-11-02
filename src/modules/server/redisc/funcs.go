@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/stats"
 
 	"github.com/garyburd/redigo/redis"
 	"github.com/toolkits/pkg/logger"

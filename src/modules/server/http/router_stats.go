@@ -1,12 +1,12 @@
 package http
 
 import (
-	"github.com/didi/nightingale/v4/src/common/str"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/backend"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
-	"github.com/didi/nightingale/v4/src/modules/server/config"
-	"github.com/didi/nightingale/v4/src/modules/server/judge"
+	"github.com/Major818/nightingale/v4/src/common/str"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/backend"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/modules/server/judge"
 
 	"github.com/gin-gonic/gin"
 	"github.com/toolkits/pkg/errors"

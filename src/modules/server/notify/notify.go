@@ -10,13 +10,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/address"
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/slice"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/config"
-	"github.com/didi/nightingale/v4/src/modules/server/cron"
-	"github.com/didi/nightingale/v4/src/modules/server/redisc"
+	"github.com/Major818/nightingale/v4/src/common/address"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/slice"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/modules/server/cron"
+	"github.com/Major818/nightingale/v4/src/modules/server/redisc"
 
 	"github.com/toolkits/pkg/file"
 	"github.com/toolkits/pkg/logger"
@@ -427,7 +427,7 @@ func send(tos []string, content, subject, notifyType string) error {
 		redisc.Write(&message, cron.VOICE_QUEUE_NAME)
 	case "sms":
 		redisc.Write(&message, cron.SMS_QUEUE_NAME)
-	case "email":
+	case "mail":
 		redisc.Write(&message, cron.MAIL_QUEUE_NAME)
 	case "im":
 		redisc.Write(&message, cron.IM_QUEUE_NAME)

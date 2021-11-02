@@ -1,8 +1,8 @@
 package rpc
 
 import (
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/modules/server/judge"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/modules/server/judge"
 )
 
 func (*Server) Send(items []*dataobj.JudgeItem, resp *dataobj.SimpleRpcResponse) error {

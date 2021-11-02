@@ -5,8 +5,8 @@ import (
 
 	"github.com/toolkits/pkg/logger"
 
-	"github.com/didi/nightingale/v4/src/common/identity"
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/common/identity"
+	"github.com/Major818/nightingale/v4/src/models"
 )
 
 func Heartbeat() {

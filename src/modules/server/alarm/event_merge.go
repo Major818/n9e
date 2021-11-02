@@ -5,11 +5,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/slice"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/config"
-	"github.com/didi/nightingale/v4/src/modules/server/notify"
-	"github.com/didi/nightingale/v4/src/modules/server/redisc"
+	"github.com/Major818/nightingale/v4/src/common/slice"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/nightingale/v4/src/modules/server/notify"
+	"github.com/Major818/nightingale/v4/src/modules/server/redisc"
 
 	"github.com/toolkits/pkg/logger"
 )

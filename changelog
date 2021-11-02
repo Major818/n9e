@@ -132,7 +132,7 @@
   - 服务端模块合并为一个模块
   - agentd和server的调用全部走rpc
 
-重新安装：见 https://n9e.didiyun.com/docs/install/binary/
+重新安装：见 https://github.com/Major818/docs/install/binary/
 
 升级方法：
   - 使用新的etc替换掉原来的etc

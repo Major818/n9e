@@ -3,7 +3,7 @@ package core
 import (
 	"strings"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
 )
 
 func NewMetricValue(metric string, val interface{}, dataType string, tags ...string) *dataobj.MetricValue {

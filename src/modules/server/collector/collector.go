@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/models"
 
 	"github.com/influxdata/telegraf"
 )

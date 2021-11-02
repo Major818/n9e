@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/stats"
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/models"
 
 	"github.com/toolkits/pkg/logger"
 )

@@ -1,9 +1,9 @@
 package http
 
 import (
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	statsd "github.com/didi/nightingale/v4/src/common/stats"
-	"github.com/didi/nightingale/v4/src/modules/server/rpc"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	statsd "github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/modules/server/rpc"
 
 	"github.com/gin-gonic/gin"
 	"github.com/toolkits/pkg/errors"

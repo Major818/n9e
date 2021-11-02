@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
 
 	"github.com/m3db/m3/src/dbnode/storage/index"
 	"github.com/m3db/m3/src/m3ninx/idx"

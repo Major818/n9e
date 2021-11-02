@@ -3,7 +3,7 @@ package rpc
 import (
 	"fmt"
 
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/models"
 )
 
 func (*Server) HostRegister(host models.HostRegisterForm, output *string) error {

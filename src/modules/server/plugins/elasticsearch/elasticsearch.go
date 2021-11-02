@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
-	"github.com/didi/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs/elasticsearch"
 )
@@ -39,7 +39,7 @@ var (
 			"Timeout for HTTP requests": "http请求超时时间, 单位: 秒",
 			"ClusterHealth":             "集群健康状态",
 			"Set cluster_health to true when you want to obtain cluster health stats": "是否获取集群健康状况统计信息",
-			"ClusterHealthLevel":                                                      "健康状况等级",
+			"ClusterHealthLevel": "健康状况等级",
 			"Adjust cluster_health_level when you want to obtain detailed health stats <br />The options are<br /> - indices (default)<br /> - cluster": "统计健康状况等级。可选(indices, cluster)",
 			"ClusterStats": "集群运行状态",
 			"Set cluster_stats to true when you want to obtain cluster stats.":                  "是否收集集群运行状态",

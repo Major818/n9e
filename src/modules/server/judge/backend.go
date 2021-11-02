@@ -18,12 +18,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/common/pools"
-	"github.com/didi/nightingale/v4/src/common/stats"
-	"github.com/didi/nightingale/v4/src/common/str"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/common/pools"
+	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/nightingale/v4/src/common/str"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/cache"
 
 	"github.com/toolkits/pkg/concurrent/semaphore"
 	"github.com/toolkits/pkg/container/list"
@@ -89,7 +89,6 @@ func Send2JudgeTask(Q *list.SafeListLimited, addr string, concurrent int) {
 	sema := semaphore.NewSemaphore(concurrent)
 
 	for {
-		logger.Debug("Send2JudgeTask start")
 		items := Q.PopBackBy(batch)
 		count := len(items)
 		if count == 0 {
@@ -106,7 +105,6 @@ func Send2JudgeTask(Q *list.SafeListLimited, addr string, concurrent int) {
 		sema.Acquire()
 		go func(addr string, judgeItems []*dataobj.JudgeItem, count int) {
 			defer sema.Release()
-			logger.Debugf("Server.Send addr : %s, judgeItems: %+v", addr, judgeItems)
 			if strings.Contains(addr, Ident) {
 				logger.Debugf("send judgeItems addr: %s,Ident:%s", addr, Ident)
 				Send(judgeItems)

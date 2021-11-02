@@ -6,10 +6,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/client"
-	"github.com/didi/nightingale/v4/src/common/identity"
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/agentd/config"
+	"github.com/Major818/nightingale/v4/src/common/client"
+	"github.com/Major818/nightingale/v4/src/common/identity"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
 
 	"github.com/toolkits/pkg/logger"
 	"github.com/toolkits/pkg/str"

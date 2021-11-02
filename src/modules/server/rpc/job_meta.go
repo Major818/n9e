@@ -3,8 +3,8 @@ package rpc
 import (
 	"fmt"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/models"
 )
 
 // GetTaskMeta 获取任务元信息，自带缓存

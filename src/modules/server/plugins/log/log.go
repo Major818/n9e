@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/didi/nightingale/v4/src/models"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/models"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
 	"github.com/influxdata/telegraf"
 )
 

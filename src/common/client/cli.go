@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/address"
+	"github.com/Major818/nightingale/v4/src/common/address"
 	"github.com/ugorji/go/codec"
 
 	"github.com/toolkits/pkg/logger"

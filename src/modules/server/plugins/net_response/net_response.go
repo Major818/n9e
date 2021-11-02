@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
-	"github.com/didi/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
 
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs/net_response"
@@ -39,8 +39,8 @@ var (
 			"Send":        "Send",
 			"Expect":      "Expect",
 			"readme - https://github.com/influxdata/telegraf/tree/master/plugins/inputs/net_response": "更多说明详细详见 https://github.com/influxdata/telegraf/tree/master/plugins/inputs/net_response",
-			"Protocol, must be tcp or udp":                                                            "请求协议，必须是 tcp 或 udp",
-			"Set timeout":                                                                             "设置超时，单位是秒",
+			"Protocol, must be tcp or udp": "请求协议，必须是 tcp 或 udp",
+			"Set timeout":                  "设置超时，单位是秒",
 			"Set read timeout (only used if expecting a response)": "设置读取的超时（仅当配置了 expect response 时使用），单位是秒",
 			"string sent to the server, udp required":              "发送给服务器的字符串，udp 必须",
 			"expected string in answer, udp required":              "期待服务器返回的字符串（部分），udp 必须",

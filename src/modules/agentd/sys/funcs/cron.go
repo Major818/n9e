@@ -17,10 +17,10 @@ package funcs
 import (
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/modules/agentd/config"
-	"github.com/didi/nightingale/v4/src/modules/agentd/core"
-	"github.com/didi/nightingale/v4/src/modules/agentd/sys"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/core"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/sys"
 )
 
 func Collect() {

@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/didi/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
 )
 
 const sampleTextFormat = `# HELP test_metric An untyped metric with a timestamp

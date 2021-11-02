@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/didi/nightingale/v4/src/common/i18n"
-	"github.com/didi/nightingale/v4/src/modules/server/collector"
-	"github.com/didi/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs/github"
 )
@@ -22,8 +22,8 @@ var (
 			"Repositories":                    "代码仓库",
 			"List of repositories to monitor": "要监视的代码仓库存列表",
 			"Access token":                    "访问令牌",
-			"Github API access token. Unauthenticated requests are limited to 60 per hour":      "Github 接口的访问令牌. 匿名状态下，每小时请求限制为60",
-			"Enterprise base url":                                                               "Github 企业版地址",
+			"Github API access token. Unauthenticated requests are limited to 60 per hour": "Github 接口的访问令牌. 匿名状态下，每小时请求限制为60",
+			"Enterprise base url": "Github 企业版地址",
 			"Github API enterprise url. Github Enterprise accounts must specify their base url": "如果使用Github企业版，请配置企业版API地址",
 			"HTTP timeout":              "请求超时时间",
 			"Timeout for HTTP requests": "http请求超时时间, 单位: 秒",

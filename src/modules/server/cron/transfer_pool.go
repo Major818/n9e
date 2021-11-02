@@ -3,7 +3,7 @@ package cron
 import (
 	"time"
 
-	"github.com/didi/nightingale/v4/src/modules/server/judge"
+	"github.com/Major818/nightingale/v4/src/modules/server/judge"
 )
 
 func RebuildJudgePool() {

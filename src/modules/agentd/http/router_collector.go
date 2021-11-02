@@ -1,11 +1,11 @@
 package http
 
 import (
-	"github.com/didi/nightingale/v4/src/common/dataobj"
-	"github.com/didi/nightingale/v4/src/modules/agentd/core"
-	"github.com/didi/nightingale/v4/src/modules/agentd/log/strategy"
-	"github.com/didi/nightingale/v4/src/modules/agentd/log/worker"
-	"github.com/didi/nightingale/v4/src/modules/agentd/stra"
+	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/core"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/log/strategy"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/log/worker"
+	"github.com/Major818/nightingale/v4/src/modules/agentd/stra"
 
 	"github.com/gin-gonic/gin"
 	"github.com/toolkits/pkg/errors"
