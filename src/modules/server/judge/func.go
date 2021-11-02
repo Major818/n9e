@@ -33,6 +33,7 @@ type MaxFunction struct {
 }
 
 func (f MaxFunction) Compute(vs []*dataobj.HistoryData) (leftValue dataobj.JsonFloat, isTriggered bool) {
+	fmt.Printf("max function start vs len : %d", len(vs))
 	count := len(vs)
 	if count < 1 {
 		return
@@ -47,6 +48,7 @@ func (f MaxFunction) Compute(vs []*dataobj.HistoryData) (leftValue dataobj.JsonF
 
 	leftValue = max
 	isTriggered = checkIsTriggered(leftValue, f.Operator, f.RightValue)
+	fmt.Printf("max function end : %t", isTriggered)
 	return
 }
 

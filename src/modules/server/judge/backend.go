@@ -89,6 +89,7 @@ func Send2JudgeTask(Q *list.SafeListLimited, addr string, concurrent int) {
 	sema := semaphore.NewSemaphore(concurrent)
 
 	for {
+		logger.Debug("Send2JudgeTask start")
 		items := Q.PopBackBy(batch)
 		count := len(items)
 		if count == 0 {
@@ -105,12 +106,12 @@ func Send2JudgeTask(Q *list.SafeListLimited, addr string, concurrent int) {
 		sema.Acquire()
 		go func(addr string, judgeItems []*dataobj.JudgeItem, count int) {
 			defer sema.Release()
-
+			logger.Debugf("Server.Send addr : %s, judgeItems: %+v", addr, judgeItems)
 			if strings.Contains(addr, Ident) {
+				logger.Debugf("send judgeItems addr: %s,Ident:%s", addr, Ident)
 				Send(judgeItems)
 				return
 			}
-
 			resp := &dataobj.SimpleRpcResponse{}
 			var err error
 			sendOk := false

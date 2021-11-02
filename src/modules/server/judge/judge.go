@@ -72,6 +72,8 @@ func ToJudge(historyMap *cache.JudgeItemMap, key string, val *dataobj.JudgeItem,
 		return
 	}
 
+	logger.Debugf("stra :%+v", stra)
+
 	linkedList, exists := historyMap.Get(key)
 	if exists {
 		needJudge := linkedList.PushFrontAndMaintain(val, stra.AlertDur)
@@ -394,6 +396,7 @@ func GetReqs(stra *models.Stra, metric string, nids, endpoints []string, now int
 }
 
 func sendEventIfNeed(status []bool, event *dataobj.Event, stra *models.Stra) {
+	logger.Infof("sendEventIfNeed,event:%+v ,stra:%+v", event, stra)
 	isTriggered := true
 	for _, s := range status {
 		isTriggered = isTriggered && s
@@ -403,6 +406,7 @@ func sendEventIfNeed(status []bool, event *dataobj.Event, stra *models.Stra) {
 	if isTriggered {
 		event.EventType = EVENT_ALERT
 		if !exists || lastEvent.EventType[0] == 'r' {
+			logger.Info("event.alert1 queue: %s", event.Partition)
 			stats.Counter.Set("event.alert", 1)
 			sendEvent(event)
 			return
@@ -412,7 +416,7 @@ func sendEventIfNeed(status []bool, event *dataobj.Event, stra *models.Stra) {
 			//距离上次告警的时间小于告警统计周期，不再进行告警判断
 			return
 		}
-
+		logger.Info("event.alert2  queue: %s", event.Partition)
 		stats.Counter.Set("event.alert", 1)
 		sendEvent(event)
 	} else {

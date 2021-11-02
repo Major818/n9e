@@ -58,6 +58,7 @@ func nodataJudge() {
 		}
 
 		items := getJudgeItems(reqs)
+		logger.Debugf("nodata items : %+v", items)
 		for _, item := range items {
 			nodataJob.Acquire()
 			go AsyncJudge(nodataJob, stra, stra.Exprs, item, now)
