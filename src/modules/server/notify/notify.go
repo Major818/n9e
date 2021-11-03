@@ -414,7 +414,7 @@ func send(tos []string, content, subject, notifyType string) error {
 	}
 
 	message.Tos = tos
-	message.Subject = subject
+	message.Subject = strings.TrimSpace(subject)
 	message.Content = strings.TrimSpace(content)
 	if message.Content == "" {
 		return fmt.Errorf("content is blank")
