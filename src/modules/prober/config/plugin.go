@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/modules/prober/expr"
-	"github.com/Major818/nightingale/v4/src/modules/server/collector"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/modules/prober/expr"
+	"github.com/Major818/n9e/v4/src/modules/server/collector"
 
 	"github.com/influxdata/telegraf"
 	"github.com/toolkits/pkg/logger"

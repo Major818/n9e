@@ -12,9 +12,9 @@ import (
 	"github.com/toolkits/pkg/net/httplib"
 	"github.com/toolkits/pkg/slice"
 
-	"github.com/Major818/nightingale/v4/src/common/address"
-	"github.com/Major818/nightingale/v4/src/models"
-	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/n9e/v4/src/common/address"
+	"github.com/Major818/n9e/v4/src/models"
+	"github.com/Major818/n9e/v4/src/modules/server/config"
 )
 
 type taskForm struct {

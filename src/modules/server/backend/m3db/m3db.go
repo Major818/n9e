@@ -6,8 +6,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/common/stats"
 
 	"github.com/m3db/m3/src/dbnode/client"
 	"github.com/m3db/m3/src/dbnode/encoding"

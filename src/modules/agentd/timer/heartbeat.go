@@ -4,9 +4,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/client"
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
+	"github.com/Major818/n9e/v4/src/common/client"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/modules/agentd/config"
 
 	"github.com/toolkits/pkg/logger"
 )

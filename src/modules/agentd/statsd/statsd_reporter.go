@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/common/exit"
-	"github.com/Major818/nightingale/v4/src/common/stats"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/core"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/common/exit"
+	"github.com/Major818/n9e/v4/src/common/stats"
+	"github.com/Major818/n9e/v4/src/modules/agentd/config"
+	"github.com/Major818/n9e/v4/src/modules/agentd/core"
 
 	"github.com/toolkits/pkg/logger"
 )

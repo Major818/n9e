@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Major818/nightingale/v4/src/modules/prober/cache"
+	"github.com/Major818/n9e/v4/src/modules/prober/cache"
 
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"

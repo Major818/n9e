@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/models"
-	"github.com/Major818/nightingale/v4/src/modules/prober/manager/accumulator"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/models"
+	"github.com/Major818/n9e/v4/src/modules/prober/manager/accumulator"
 
 	"github.com/influxdata/telegraf"
 )

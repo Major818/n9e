@@ -6,10 +6,10 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/common/stats"
-	"github.com/Major818/nightingale/v4/src/modules/server/aggr"
-	"github.com/Major818/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/common/stats"
+	"github.com/Major818/n9e/v4/src/modules/server/aggr"
+	"github.com/Major818/n9e/v4/src/modules/server/cache"
 
 	"github.com/Shopify/sarama"
 	"github.com/toolkits/pkg/logger"

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	goping "github.com/Major818/nightingale/v4/src/common/ping"
-	"github.com/Major818/nightingale/v4/src/models"
-	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	goping "github.com/Major818/n9e/v4/src/common/ping"
+	"github.com/Major818/n9e/v4/src/models"
+	"github.com/Major818/n9e/v4/src/modules/server/config"
 
 	"github.com/gaochao1/sw"
 	"github.com/gin-gonic/gin"

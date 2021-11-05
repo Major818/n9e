@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/log/strategy"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/stra"
+	"github.com/Major818/n9e/v4/src/modules/agentd/config"
+	"github.com/Major818/n9e/v4/src/modules/agentd/log/strategy"
+	"github.com/Major818/n9e/v4/src/modules/agentd/stra"
 
 	"github.com/toolkits/pkg/logger"
 )

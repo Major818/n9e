@@ -1,8 +1,8 @@
 package funcs
 
 import (
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/core"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/modules/agentd/core"
 )
 
 func CollectorMetrics() []*dataobj.MetricValue {

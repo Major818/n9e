@@ -231,7 +231,7 @@
             <footer>
                 <div class="footer-logo">
                     <a href="https://github.com/Major818">
-                        <img src="https://github.com/Major818/nightingale/blob/v4/docs/image/email.png"  class="footer-logo-image" alt="">
+                        <img src="https://github.com/Major818/n9e/blob/v4/docs/image/email.png"  class="footer-logo-image" alt="">
                     </a>
                 </div>
                 <div class="copyright" style="font-style: italic">

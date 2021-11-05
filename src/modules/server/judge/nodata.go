@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/models"
-	"github.com/Major818/nightingale/v4/src/modules/server/cache"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/models"
+	"github.com/Major818/n9e/v4/src/modules/server/cache"
 
 	"github.com/toolkits/pkg/concurrent/semaphore"
 	"github.com/toolkits/pkg/logger"

@@ -20,10 +20,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/common/pools"
-	"github.com/Major818/nightingale/v4/src/common/stats"
-	"github.com/Major818/nightingale/v4/src/modules/server/calc"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/common/pools"
+	"github.com/Major818/n9e/v4/src/common/stats"
+	"github.com/Major818/n9e/v4/src/modules/server/calc"
 
 	"github.com/toolkits/pkg/logger"
 	"github.com/toolkits/pkg/net/httplib"

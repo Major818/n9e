@@ -20,8 +20,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Major818/nightingale/v4/src/modules/agentd/stra"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/sys"
+	"github.com/Major818/n9e/v4/src/modules/agentd/stra"
+	"github.com/Major818/n9e/v4/src/modules/agentd/sys"
 
 	"github.com/toolkits/pkg/file"
 	"github.com/toolkits/pkg/logger"

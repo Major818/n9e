@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/modules/server/backend/m3db"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/modules/server/backend/m3db"
 
 	"github.com/toolkits/pkg/concurrent/semaphore"
 	"gopkg.in/yaml.v2"

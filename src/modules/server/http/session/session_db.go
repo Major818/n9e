@@ -3,8 +3,8 @@ package session
 import (
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/models"
-	"github.com/Major818/nightingale/v4/src/modules/server/config"
+	"github.com/Major818/n9e/v4/src/models"
+	"github.com/Major818/n9e/v4/src/modules/server/config"
 
 	"github.com/toolkits/pkg/logger"
 )

@@ -3,7 +3,7 @@ package ports
 import (
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/modules/agentd/stra"
+	"github.com/Major818/n9e/v4/src/modules/agentd/stra"
 )
 
 func Detect() {

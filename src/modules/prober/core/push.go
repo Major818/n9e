@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/address"
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/modules/prober/cache"
+	"github.com/Major818/n9e/v4/src/common/address"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/modules/prober/cache"
 
 	"github.com/toolkits/pkg/logger"
 	"github.com/ugorji/go/codec"

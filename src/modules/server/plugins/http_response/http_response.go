@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/i18n"
-	"github.com/Major818/nightingale/v4/src/modules/server/collector"
-	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
+	"github.com/Major818/n9e/v4/src/common/i18n"
+	"github.com/Major818/n9e/v4/src/modules/server/collector"
+	"github.com/Major818/n9e/v4/src/modules/server/plugins"
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/plugins/inputs/http_response"
 )
@@ -63,7 +63,7 @@ var (
 )
 
 type Rule struct {
-	URLs                []string `label:"URLs" json:"urls,required" description:"List of urls to query" example:"https://github.com/Major818/nightingale"`
+	URLs                []string `label:"URLs" json:"urls,required" description:"List of urls to query" example:"https://github.com/Major818/n9e"`
 	Method              string   `label:"Method" json:"method" description:"HTTP Request Method, default GET" example:"GET"`
 	ResponseTimeout     int      `label:"ResponseTimeout" json:"response_timeout" default:"5" description:"Set response_timeout (default 5 seconds)"`
 	Headers             []string `label:"Headers" json:"headers" description:"HTTP Request Headers" example:"Content-Type: application/json"`

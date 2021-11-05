@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/identity"
-	"github.com/Major818/nightingale/v4/src/common/loggeri"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/sys"
+	"github.com/Major818/n9e/v4/src/common/identity"
+	"github.com/Major818/n9e/v4/src/common/loggeri"
+	"github.com/Major818/n9e/v4/src/modules/agentd/sys"
 
 	"github.com/spf13/viper"
 	"github.com/toolkits/pkg/file"

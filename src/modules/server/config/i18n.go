@@ -1,6 +1,6 @@
 package config
 
-import "github.com/Major818/nightingale/v4/src/common/i18n"
+import "github.com/Major818/n9e/v4/src/common/i18n"
 
 var (
 	langDict = map[string]map[string]string{

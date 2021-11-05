@@ -1,8 +1,8 @@
 package query
 
 import (
-	"github.com/Major818/nightingale/v4/src/common/address"
-	"github.com/Major818/nightingale/v4/src/common/pools"
+	"github.com/Major818/n9e/v4/src/common/address"
+	"github.com/Major818/n9e/v4/src/common/pools"
 )
 
 var (

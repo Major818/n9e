@@ -3,10 +3,10 @@ package ping
 import (
 	"fmt"
 
-	"github.com/Major818/nightingale/v4/src/common/i18n"
-	"github.com/Major818/nightingale/v4/src/modules/server/collector"
-	"github.com/Major818/nightingale/v4/src/modules/server/plugins"
-	"github.com/Major818/nightingale/v4/src/modules/server/plugins/ping/ping"
+	"github.com/Major818/n9e/v4/src/common/i18n"
+	"github.com/Major818/n9e/v4/src/modules/server/collector"
+	"github.com/Major818/n9e/v4/src/modules/server/plugins"
+	"github.com/Major818/n9e/v4/src/modules/server/plugins/ping/ping"
 
 	"github.com/influxdata/telegraf"
 )

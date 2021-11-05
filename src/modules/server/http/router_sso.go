@@ -1,7 +1,7 @@
 package http
 
 import (
-	"github.com/Major818/nightingale/v4/src/modules/server/ssoc"
+	"github.com/Major818/n9e/v4/src/modules/server/ssoc"
 
 	"github.com/gin-gonic/gin"
 )

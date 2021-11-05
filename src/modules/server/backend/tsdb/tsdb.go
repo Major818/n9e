@@ -18,9 +18,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/common/pools"
-	"github.com/Major818/nightingale/v4/src/common/stats"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/common/pools"
+	"github.com/Major818/n9e/v4/src/common/stats"
 
 	"github.com/toolkits/pkg/concurrent/semaphore"
 	"github.com/toolkits/pkg/container/list"

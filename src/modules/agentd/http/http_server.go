@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/address"
-	"github.com/Major818/nightingale/v4/src/common/middleware"
+	"github.com/Major818/n9e/v4/src/common/address"
+	"github.com/Major818/n9e/v4/src/common/middleware"
 
 	"github.com/gin-gonic/gin"
 )

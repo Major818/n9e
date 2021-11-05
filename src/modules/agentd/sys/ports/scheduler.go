@@ -7,11 +7,11 @@ import (
 
 	"github.com/toolkits/pkg/logger"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/models"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/config"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/core"
-	"github.com/Major818/nightingale/v4/src/modules/agentd/report"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/models"
+	"github.com/Major818/n9e/v4/src/modules/agentd/config"
+	"github.com/Major818/n9e/v4/src/modules/agentd/core"
+	"github.com/Major818/n9e/v4/src/modules/agentd/report"
 )
 
 type PortScheduler struct {

@@ -1,8 +1,8 @@
 package rpc
 
 import (
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
-	"github.com/Major818/nightingale/v4/src/modules/server/backend"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/modules/server/backend"
 
 	"github.com/toolkits/pkg/logger"
 )

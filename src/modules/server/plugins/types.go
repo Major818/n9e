@@ -1,7 +1,7 @@
 package plugins
 
 import (
-	"github.com/Major818/nightingale/v4/src/common/i18n"
+	"github.com/Major818/n9e/v4/src/common/i18n"
 
 	"github.com/influxdata/telegraf/plugins/common/tls"
 )

@@ -1,4 +1,4 @@
-module github.com/Major818/nightingale/v4
+module github.com/Major818/n9e/v4
 
 go 1.12
 

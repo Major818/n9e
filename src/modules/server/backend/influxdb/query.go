@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Major818/nightingale/v4/src/common/dataobj"
+	"github.com/Major818/n9e/v4/src/common/dataobj"
 
 	client "github.com/influxdata/influxdb/client/v2"
 	"github.com/influxdata/influxdb/models"
